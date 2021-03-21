@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const apiURL = "https://dtmoney-maykelsantoz.vercel.app"
+
 export const api = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: apiURL,
 })

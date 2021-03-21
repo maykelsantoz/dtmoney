@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "miragejs": "^0.1.41",
     "polished": "^4.1.1",
     "react": "^17.0.1",
