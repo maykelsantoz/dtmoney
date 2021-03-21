@@ -5,10 +5,10 @@ interface ValorProps {
   //activeColor: 'green' | 'red';
 }
 
-const colors = {
-  red: '#E62E4D',
-  green: '#33CC95',
-}
+// const colors = {
+//   red: '#E62E4D',
+//   green: '#33CC95',
+// }
 
 export const Container = styled.div<ValorProps>`
   display: grid;
