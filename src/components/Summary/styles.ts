@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface ValorProps {
+  valor: number;
+  //activeColor: 'green' | 'red';
+}
+
+const colors = {
+  red: '#E62E4D',
+  green: '#33CC95',
+}
+
+export const Container = styled.div<ValorProps>`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -27,7 +37,10 @@ export const Container = styled.div`
     }
 
     &.highlight-background {
-    background: var(--green);
+    //background: var(--green);
+    background: ${(props) => props.valor > 0
+    ? '#33CC95'
+    : '#E62E4D'};
     color: #fff;
 
     }
